@@ -12,3 +12,5 @@ https://github.com/kurolz
 Tech ebooks
 https://github.com/jzmq/book
 
+Open Books for programing and admin
+https://linuxstory.org/free-chinese-programming-books/
