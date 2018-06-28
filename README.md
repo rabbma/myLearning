@@ -14,3 +14,7 @@ https://github.com/jzmq/book
 
 Open Books for programing and admin
 https://linuxstory.org/free-chinese-programming-books/
+
+xiaolai
+https://legacy.gitbook.com/book/xiaolai/reborn/details
+
