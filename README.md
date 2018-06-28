@@ -8,3 +8,7 @@ https://github.com/kamranahmedse/developer-roadmap/tree/master
 
 DevOps
 https://github.com/kurolz
+
+Tech ebooks
+https://github.com/jzmq/book
+
