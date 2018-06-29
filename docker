@@ -1,2 +1,15 @@
 Docker Installation
 
+1.  create docker account and group
+    login as root
+    groupadd docker
+    useradd docker -g docker
+    passwd docker ****
+    usermod -aG wheel docker  #add to sudoer
+    logout root/login as docker
+2.  Install using the repository
+    1) Install required packages. yum-utils provides the yum-config-manager utility, and device-mapper-persistent-data and lvm2 are required by the devicemapper storage driver.
+      sudo yum install -y yum-utils \
+      device-mapper-persistent-data \
+      lvm2
+    
