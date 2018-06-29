@@ -73,4 +73,6 @@ Post-installation steps for Linux
     "dm.directlvm_device_force=false"
   ]
 }
-    
+    2)  Restart docker
+        sudo systemctl restart docker
+
