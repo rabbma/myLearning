@@ -3,8 +3,8 @@
 Resource:
 https://github.com/learn-anything
 
-[foo]: https://github.com/learn-anything "Online resource"
-[foo]
+[Online resource]: https://github.com/learn-anything "Online github resource"
+[Online resource]
 
 2018 Full stack trend
 https://github.com/kamranahmedse/developer-roadmap/tree/master
