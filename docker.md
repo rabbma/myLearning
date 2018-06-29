@@ -1,6 +1,7 @@
 # Docker Installation on CentOS7.5
 
-[Official document reference]: https://docs.docker.com/install/linux/docker-ce/centos/#uninstall-old-versions [Official document reference]
+[Official document reference]: https://docs.docker.com/install/linux/docker-ce/centos/#uninstall-old-versions 
+[Official document reference]
 
 1.  create docker account and group
     `
