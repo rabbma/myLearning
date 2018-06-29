@@ -1,0 +1,81 @@
+#Docker Installation on CentOS7.5
+
+[Official document reference]: https://docs.docker.com/install/linux/docker-ce/centos/#uninstall-old-versions [Official document reference]
+
+1.  create docker account and group
+    `
+    login as root
+    groupadd docker
+    useradd docker -g docker
+    passwd docker ****
+    usermod -aG wheel docker  #add to sudoer
+    `
+    logout root/login as docker
+
+2.  Install using the repository
+    1)  Install required packages. yum-utils provides the yum-config-manager utility, and device-mapper-persistent-data and lvm2 are required by the devicemapper storage driver.
+      sudo yum install -y yum-utils \
+      device-mapper-persistent-data \
+      lvm2
+    2)  Use the following command to set up the stable repository. You always need the stable repository, even if you want to install builds from the edge or test repositories as well.
+        sudo yum-config-manager \
+            --add-repo \
+            https://download.docker.com/linux/centos/docker-ce.repo
+
+3.  1)  Install docker-ce
+        sudo yum install docker-ce
+    2)  Check the multi-version
+        yum list docker-ce --showduplicates | sort -r
+    3)  Start docker
+        sudo systemctl start docker
+    4)  Verify docker
+        sudo docker run hello-world
+
+4.  Uninstall docker
+    1)  uninstall docker-ce
+        sudo yum remove docker-ce
+    2)  delete docker images, containers...
+        sudo rm -rf /var/lib/docker
+
+---------------------------------------------
+Post-installation steps for Linux
+
+1.  Configure Docker to start on boot
+    https://docs.docker.com/install/linux/linux-postinstall/#use-a-different-storage-engine
+    systemd
+    1)  sudo systemctl enable docker
+    2)  sudo systemctl disable docker
+    chkconfig
+    1)  sudo chkconfig docker on
+2.  Use a different storage engine
+    https://docs.docker.com/storage/storagedriver/device-mapper-driver/
+    Configure Docker with the devicemapper storage driver
+    1)  Stop docker
+        sudo systemctl stop docker
+    2)  Edit /etc/docker/daemon.json. If it does not yet exist, create it. Assuming that the file was empty, add the following contents.
+        {
+            "storage-driver": "devicemapper"
+        }
+    3)  Start docker
+        sudo systemctl start docker
+    4)  Verify that the daemon is using the devicemapper storage driver. Use the docker info command and look for Storage Driver.
+        docker info
+        see below info:
+            Storage Driver: devicemapper
+    Configure direct-lvm mode for production
+    1)  Edit /etc/docker/daemon.json
+        sudo vi /etc/docker/daemon.json
+{
+  "storage-driver": "devicemapper",
+  "storage-opts": [
+    "dm.directlvm_device=/dev/sdb1",
+    "dm.thinp_percent=95",
+    "dm.thinp_metapercent=1",
+    "dm.thinp_autoextend_threshold=80",
+    "dm.thinp_autoextend_percent=20",
+    "dm.directlvm_device_force=false"
+  ]
+}
+    2)  Restart docker
+        sudo systemctl restart docker
+
