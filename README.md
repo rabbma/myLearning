@@ -27,6 +27,8 @@ https://github.com/monkeyaround
 Techotopia
 https://www.techotopia.com/index.php/Main_Page
 
+[Chaos Engineering]:http://www.infoq.com/cn/articles/chaos-engineering-the-history-principles-and-practice
+[Chaos Engineering]
 
 -----------------------------------------------------------
 Docker Installation https://github.com/rabbma/myLearning/blob/master/docker
