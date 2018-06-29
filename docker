@@ -42,4 +42,6 @@ Post-installation steps for Linux
     systemd
     1)  sudo systemctl enable docker
     2)  sudo systemctl disable docker
+    chkconfig
+    1)  sudo chkconfig docker on
     
