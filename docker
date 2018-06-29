@@ -3,13 +3,13 @@ Docker Installation on CentOS7.5
 Ref: https://docs.docker.com/install/linux/docker-ce/centos/#uninstall-old-versions
 
 1.  create docker account and group
-    ```
+    `
     login as root
     groupadd docker
     useradd docker -g docker
     passwd docker ****
     usermod -aG wheel docker  #add to sudoer
-    ```
+    `
     logout root/login as docker
 
 2.  Install using the repository
