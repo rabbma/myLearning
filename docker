@@ -34,3 +34,12 @@ Ref: https://docs.docker.com/install/linux/docker-ce/centos/#uninstall-old-versi
         sudo yum remove docker-ce
     2)  delete docker images, containers...
         sudo rm -rf /var/lib/docker
+
+---------------------------------------------
+Post-installation steps for Linux
+
+1.  Configure Docker to start on boot
+    systemd
+    1)  sudo systemctl enable docker
+    2)  sudo systemctl disable docker
+    
