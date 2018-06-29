@@ -52,4 +52,6 @@ Post-installation steps for Linux
         {
             "storage-driver": "devicemapper"
         }
-    3)  
+    3)  Start docker
+        sudo systemctl start docker
+    
