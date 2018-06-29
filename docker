@@ -44,4 +44,12 @@ Post-installation steps for Linux
     2)  sudo systemctl disable docker
     chkconfig
     1)  sudo chkconfig docker on
-    
+2.  Use a different storage engine
+    Configure Docker with the devicemapper storage driver
+    1)  Stop docker
+        sudo systemctl stop docker
+    2)  Edit /etc/docker/daemon.json. If it does not yet exist, create it. Assuming that the file was empty, add the following contents.
+        {
+            "storage-driver": "devicemapper"
+        }
+    3)  
