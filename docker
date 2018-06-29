@@ -62,10 +62,11 @@ Post-installation steps for Linux
             Storage Driver: devicemapper
     Configure direct-lvm mode for production
     1)  Edit /etc/docker/daemon.json
+        sudo vi /etc/docker/daemon.json
 {
   "storage-driver": "devicemapper",
   "storage-opts": [
-    "dm.directlvm_device=/dev/xdf",
+    "dm.directlvm_device=/dev/sdb1",
     "dm.thinp_percent=95",
     "dm.thinp_metapercent=1",
     "dm.thinp_autoextend_threshold=80",
