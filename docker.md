@@ -3,6 +3,9 @@
 [Official document reference]: https://docs.docker.com/install/linux/docker-ce/centos/#uninstall-old-versions 
 [Official document reference]
 
+[Docker CE Installation on Red Hat 7]: https://getstart.blog/2018/03/24/docker-ce-installation-on-red-hat-7/
+[Docker CE Installation on Red Hat 7]
+
 ## 1.  create docker account and group
     login as root
     ```
