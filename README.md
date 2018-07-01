@@ -3,8 +3,11 @@
 Resource:
 https://github.com/learn-anything
 
-[Online resource]: https://github.com/learn-anything "Online github resource"
+[Online resource]: https://github.com/learn-anything
 [Online resource]
+
+[开源工厂]:https://openingsource.org/weekly/
+[开源工厂]
 
 2018 Full stack trend
 https://github.com/kamranahmedse/developer-roadmap/tree/master
