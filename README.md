@@ -25,7 +25,7 @@ Open Books for programing and admin
 https://linuxstory.org/free-chinese-programming-books/
 
 xiaolai
-https://legacy.gitbook.com/book/xiaolai/reborn/details
+https://legacy.gitbook.com/@xiaolai
 
 VertX frontend
 https://github.com/monkeyaround
