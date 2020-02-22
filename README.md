@@ -18,6 +18,9 @@ https://github.com/kamranahmedse/developer-roadmap/tree/master
 DevOps
 https://github.com/kurolz
 
+Linux Bash Shell Script and Python Script For Ops and Devops
+https://github.com/DingGuodong/LinuxBashShellScriptForOps
+
 Tech ebooks
 https://github.com/jzmq/book
 
