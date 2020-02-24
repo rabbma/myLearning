@@ -21,6 +21,9 @@ https://github.com/kurolz
 Linux Bash Shell Script and Python Script For Ops and Devops
 https://github.com/DingGuodong/LinuxBashShellScriptForOps
 
+30 Bash Script Examples
+https://linuxhint.com/30_bash_script_examples/
+
 Tech ebooks
 https://github.com/jzmq/book
 
