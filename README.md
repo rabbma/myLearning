@@ -18,6 +18,12 @@ https://github.com/kamranahmedse/developer-roadmap/tree/master
 DevOps
 https://github.com/kurolz
 
+LINUX TIPS
+https://www.bogotobogo.com/Linux/linux_tips1.php
+
+LINUX PROCESSES AND SIGNALS
+https://www.bogotobogo.com/Linux/linux_process_and_signals.php
+
 Linux Bash Shell Script and Python Script For Ops and Devops
 https://github.com/DingGuodong/LinuxBashShellScriptForOps
 
