@@ -88,3 +88,4 @@ sed -i 's/astr/bstr/' file_name
 find /home/you -iname "*.c" -atime -30 -type f
 # find List all *.c file accessed more than 30 days ago
 find /home/you -iname "*.c" -atime +30 -type f
+find . -exec grep chrome {} \;
