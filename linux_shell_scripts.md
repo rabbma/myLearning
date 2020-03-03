@@ -71,3 +71,15 @@ do
   echo $LINE
 done < filename
 
+#cut awk sed
+
+cut -d[delimiter] -f[field_number] [filename]
+
+awk -F[delimiter] '{print $2}'
+
+sed 's/astr/bstr/' file_name
+#replace all matched content
+sed 's/astr/bstr/g' file_name
+#replace the same file with -i
+sed -i 's/astr/bstr/' file_name
+
