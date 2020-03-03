@@ -1,6 +1,6 @@
 #function
 
-a_function() {
+function a_function() {
   xxx
   yyy
 }
